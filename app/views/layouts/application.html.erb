@@ -1,15 +1,53 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <title>TeamBuild</title>
-    <%= csrf_meta_tags %>
-    <%= csp_meta_tag %>
+   <head>
+      <title>::. Team Build .::</title>
+      <%= csrf_meta_tags %>
+      <%= csp_meta_tag %>
 
-    <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
-    <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
-  </head>
+		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+		<!-- Favicon-->
+		<link rel="shortcut icon" href="/assets/img/fav.png">
 
-  <body>
-    <%= yield %>
-  </body>
+      <link href="https://fonts.googleapis.com/css?family=Poppins:100,200,400,300,500,600,700" rel="stylesheet"> 
+      <!-- CSS ============================================= -->
+
+      <link rel="stylesheet" href="/assets/css/linearicons.css">
+      <link rel="stylesheet" href="/assets/css/font-awesome.min.css">
+      <link rel="stylesheet" href="/assets/css/bootstrap.css">
+      <link rel="stylesheet" href="/assets/css/magnific-popup.css">
+      <link rel="stylesheet" href="/assets/css/nice-select.css">					
+      <link rel="stylesheet" href="/assets/css/animate.min.css">
+      <link rel="stylesheet" href="/assets/css/owl.carousel.css">
+      <link rel="stylesheet" href="/assets/css/main.css">
+
+      <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+      <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
+   </head>
+
+   <body>
+
+      <div class="protfolio-wrap">    
+
+         <%= yield %>
+
+      </div>
+
+
+
+      <script src="/assets/js/vendor/jquery-2.2.4.min.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+      <script src="/assets/js/vendor/bootstrap.min.js"></script>			
+      <script src="/assets/js/easing.min.js"></script>			
+      <script src="/assets/js/jquery.ajaxchimp.min.js"></script>
+      <script src="/assets/js/jquery.magnific-popup.min.js"></script>	
+      <script src="/assets/js/owl.carousel.min.js"></script>			
+      <script src="/assets/js/jquery.sticky.js"></script>			
+      <script src="/assets/js/jquery.nice-select.min.js"></script>			
+      <script src="/assets/js/parallax.min.js"></script>	
+      <script src="/assets/js/mail-script.js"></script>
+      <script src="/assets/js/isotope.pkgd.min.js"></script>	
+      <script src="/assets/js/main.js"></script>	
+
+   </body>
 </html>
