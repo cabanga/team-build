@@ -1,4 +1,8 @@
 Rails.application.routes.draw do
-  root 'home#index'
-  # For details on the DSL available within this file, see https://guides.rubyonrails.org/routing.html
+  root 'home#index'  
+  get '/e-books', to: 'home#e_books', as: 'e_books'
+  get '/contactos', to: 'home#contactos', as: 'contactos'
+
+  
+
 end
