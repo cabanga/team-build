@@ -2166,7 +2166,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .banner-area {
-  margin-top: -56px;
+  margin-top: -80px;
   border-radius: 10px;
   background: url(../img/header-bg.jpg) center;
   background-size: cover;
@@ -2563,7 +2563,7 @@ h6 {
 }
 
 .generic-banner {
-  margin-top: -56px;
+  margin-top: -80px;
   background-color: #04091e;
   text-align: center;
 }
