@@ -27,6 +27,31 @@
 
    <body>
 
+      <% if false  %>
+        
+         <div class="cookies">
+            <p>
+               A editora Team Build, usa cookies nas páginas do site para armazenar e monitorar informações e preferências de seus usuários. Esses cookies nos permitem personalizar 
+               suas visitas ao nosso ambiente on-line, por exemplo, com o preenchimento parcial automático de formulários para Downloads.
+               Ainda, podemos monitorar seus acessos e entender o que você busca, quanto tempo fica em cada página, dentre outras coisas importantes que nos ajudam a criar novos 
+               conteúdos ou serviços que atendam as suas necessidades da melhor forma possível.
+            </p>
+
+            <p>
+               Em relação a maioria dos navegadores de internet estarem inicialmente configurados para aceitar cookies automaticamente, você pode negar seu armazenamento em disco 
+               rígido por meio das configurações de seu navegador, ou utilizando alguma forma alternativa.
+            </p>
+
+            <p>
+               Com isso, todos usuários devem entender que, caso optem por desativar os cookies, as áreas do ambiente <b>Team Build</b>, não funcionarão de forma otimizada.
+            </p>
+
+            <button onclick="cookieFunction()" class="btn genric-btn primary circle arrow">OK<span class="lnr lnr-arrow-right"></span></button>
+
+         </div>
+
+      <% end %>
+
       <div class="protfolio-wrap">    
          <%= render 'layouts/header' %>
          <%= yield %>
@@ -50,8 +75,25 @@
    </body>
 </html>
 
+<script>
+   function cookieFunction() {
+      $( ".cookies" ).remove();
+      document.cookie = "cookies_team_build=false";
+   }
+</script>
 
 <style>
+
+   .cookies{
+      position: fixed;
+      z-index: 9999;
+      background-color: #000000a1;
+      width: 100%;
+      padding: 60px;
+      color: #fff;
+      bottom: 0;
+   }
+
    .banner-area {
       margin-top: -80px!important;
    }
