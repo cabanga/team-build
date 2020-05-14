@@ -8,6 +8,10 @@ class HomeController < ApplicationController
     
   end
 
+  def sobre_nos
+    
+  end
+
   def contactos
     
   end
